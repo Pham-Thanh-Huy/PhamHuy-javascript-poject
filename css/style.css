@@ -1,0 +1,97 @@
+body {
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todolist-task {
+    width: 538px;
+    margin-top: 60px;
+    background-color: #1E272E;
+    min-height: 100px;
+}
+
+
+#task-header {
+    display: flex;
+    margin: 27px 23px 30px;
+    justify-content: space-between;
+}
+
+#task-header .task__input {
+    border: none;
+    color: #FF6F6F;
+    width: 386px;
+    border-bottom: 1px solid #FF6F6F;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+#task-header .task__input::placeholder {
+    color: #FF6F6F;
+}
+
+
+#task-header .task__button {
+    padding: 11px;
+    background-color: #FF2B2B;
+    color: #FFFFFF;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#task--content .task--content__li[complete =true] span{
+    color: #676767!important;
+    text-decoration: line-through;
+}
+
+#task--content .task--content__li {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #525252;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#task--content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#task--content ul {
+    margin: 0;
+    padding: 0;
+}
+
+#task--content .task--content__li>.task--content--change--delete button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#task--content .task--content__li>.task--content--change--delete button svg {
+    width: 15px;
+    color: #c7c7c7;
+}
+#task--content .task--content__li>.task--content--change--delete button svg:hover{
+    color: tomato !important;
+}
+
+#task--footer {
+    font-style: italic;
+    font-size: 13px;
+    color: #828282;
+    margin-left: 22px;
+    margin-right: 25px;
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
